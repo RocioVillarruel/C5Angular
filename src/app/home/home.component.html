@@ -1,0 +1,25 @@
+<p>EQUIPOS</p>
+<style>
+  table, th, td {
+    border:1px solid black;
+    border-radius: 1px;
+  }
+  th{
+    text-align: left}
+</style>
+<table>
+  <thead>
+    <tr>
+        <th>Registro </th>
+        <th>Nombre</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let team of teams">
+        <td>#{{team.id}}</td>
+        <td>{{team.name}}</td>
+      </tr>
+    </tbody>
+</table>
+
+<li><a routerLink="/about" routerLinkActive="active">About Component</a></li>
